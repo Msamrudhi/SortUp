@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import InsertionSort from './pages/InsertionSort';
+import SelectionSort from './pages/SelectionSort';
+import BubbleSort from './pages/BubbleSort';
+import QuickSort from './pages/QuickSort';
+import MergeSort from './pages/MergeSort';
+import ShellSort from './pages/ShellSort';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/insertionsort" element={<InsertionSort />} />
+        <Route path="/selectionsort" element={<SelectionSort />} />
+        <Route path="/bubblesort" element={<BubbleSort />} />
+        <Route path="/quicksort" element={<QuickSort />} />
+        <Route path="/mergesort" element={<MergeSort />} />
+        <Route path="/shellsort" element={<ShellSort />} />
+      </Routes>
+    </Router>
   );
 }
 

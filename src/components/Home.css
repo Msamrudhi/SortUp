@@ -1,0 +1,76 @@
+/* Home.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #fce4ec, #f8bbd0);
+  }
+  
+  .navbar {
+    width: 100%;
+    background-color: #c85c8e;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-title {
+    font-size: 2.5rem;
+    color: #FDFFD2;
+  }
+  
+  .home-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .home-subtitle {
+    font-size: 2rem;
+    color: #c85c8e;
+    margin-bottom: 2rem;
+  }
+  
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+    padding: 0 20px;
+    max-width: 800px;
+  }
+  
+  .sort-button {
+    background: linear-gradient(to right, #dc89ce, #ea98a3);
+    color: #0C2D57;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    width: 100%;
+  }
+  
+  .sort-button:hover {
+    background: linear-gradient(to right, #FFFDCB, #beee9c);
+    transform: translateY(-3px);
+  }
+  
